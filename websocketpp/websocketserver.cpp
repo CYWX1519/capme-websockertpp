@@ -180,7 +180,7 @@ ssl websocketserver::onTlsInit(ClientConnection comm, tls_mode mode)
         // `openssl dhparam -out dh.pem 2048`
         // Mozilla Intermediate suggests 1024 as the minimum size to use
         // Mozilla Modern suggests 2048 as the minimum size to use.
-        // ctx->use_tmp_dh_file("dh.pem");
+        ctx->use_tmp_dh_file("/home/rane/project/cpp/ManagerServer/dh.pem");
         
         std::string ciphers;
         
